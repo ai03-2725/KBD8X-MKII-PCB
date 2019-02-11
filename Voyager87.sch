@@ -115,22 +115,6 @@ F 3 "" H 2925 850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MCU_Microchip_AVR:AT90USB1286-MU U1
-U 1 1 5B32E6E2
-P 4525 4975
-F 0 "U1" H 4450 7125 50  0000 L BNN
-F 1 "AT90USB1286-AU" H 4200 2675 50  0000 L BNN
-F 2 "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm" H 4525 4975 50  0001 L BNN
-F 3 "8.69 USD" H 4525 4975 50  0001 L BNN
-F 4 "TQFP-64 Microchip" H 4525 4975 50  0001 L BNN "Field4"
-F 5 "Microchip" H 4525 4975 50  0001 L BNN "Field5"
-F 6 "Embedded microcontroller AT90USB1286-AU TQFP 64 _14x14_ Microchip Technology 8-Bit 16 MHz I/O number 48" H 4525 4975 50  0001 L BNN "Field6"
-F 7 "Good" H 4525 4975 50  0001 L BNN "Field7"
-F 8 "AT90USB1286-AU" H 4525 4975 50  0001 L BNN "Field8"
-	1    4525 4975
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small RC3
 U 1 1 5B32ED01
 P 3300 3175
@@ -279,7 +263,7 @@ L Device:C_Small C5
 U 1 1 5B3311EA
 P 800 5525
 F 0 "C5" H 810 5595 50  0000 L CNN
-F 1 "10uF" H 810 5445 50  0000 L CNN
+F 1 "1uF" H 810 5445 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 800 5525 50  0001 C CNN
 F 3 "" H 800 5525 50  0001 C CNN
 	1    800  5525
@@ -364,52 +348,6 @@ $EndComp
 Connection ~ 1650 5375
 Wire Wire Line
 	5775 4875 5125 4875
-Text GLabel 3925 6375 0    60   Input ~ 0
-COL4
-Text GLabel 3925 6475 0    60   Input ~ 0
-COL5
-Text GLabel 3925 6575 0    60   Input ~ 0
-COL6
-Text GLabel 3925 6675 0    60   Input ~ 0
-COL7
-Text GLabel 5125 3275 2    60   Input ~ 0
-COL8
-Text GLabel 5125 3375 2    60   Input ~ 0
-COL9
-Text GLabel 5125 3475 2    60   Input ~ 0
-COL10
-Text GLabel 5125 3575 2    60   Input ~ 0
-COL11
-Text GLabel 5125 3675 2    60   Input ~ 0
-COL12
-Text GLabel 5125 3775 2    60   Input ~ 0
-COL13
-Text GLabel 5125 3875 2    60   Input ~ 0
-COL14
-Text GLabel 5125 5175 2    60   Input ~ 0
-COL15
-Text GLabel 5125 5075 2    60   Input ~ 0
-COL16
-Text GLabel 3925 5975 0    60   Input ~ 0
-COL0
-Text GLabel 3925 6075 0    60   Input ~ 0
-COL1
-Text GLabel 3925 6175 0    60   Input ~ 0
-COL2
-Text GLabel 3925 6275 0    60   Input ~ 0
-COL3
-Text GLabel 5125 5775 2    60   Input ~ 0
-ROW5
-Text GLabel 5125 5675 2    60   Input ~ 0
-ROW4
-Text GLabel 5125 5575 2    60   Input ~ 0
-ROW3
-Text GLabel 5125 5475 2    60   Input ~ 0
-ROW2
-Text GLabel 5125 5375 2    60   Input ~ 0
-ROW1
-Text GLabel 5125 6675 2    60   Input ~ 0
-ROW0
 Wire Wire Line
 	2925 850  3100 850 
 Wire Wire Line
@@ -467,17 +405,10 @@ F 3 "" H 4375 2125 50  0001 C CNN
 $EndComp
 Text GLabel 4875 1725 2    50   Input ~ 0
 SCK
-Text GLabel 5125 4475 2    50   Input ~ 0
-MISO
-Text GLabel 5125 4375 2    50   Input ~ 0
-MOSI
-Text GLabel 5125 4275 2    50   Input ~ 0
-SCK
 Text GLabel 3725 3175 2    50   Input ~ 0
 RESET
 Wire Wire Line
 	3725 3175 3725 3275
-Connection ~ 3725 3275
 Wire Wire Line
 	3725 3275 3925 3275
 Text GLabel 4875 1825 2    50   Input ~ 0
@@ -605,61 +536,8 @@ Wire Wire Line
 Connection ~ 2125 1400
 Wire Wire Line
 	2125 1400 2925 1400
-$Comp
-L power:+5V #PWR0103
-U 1 1 6620CA5D
-P 4000 2775
-F 0 "#PWR0103" H 4000 2625 50  0001 C CNN
-F 1 "+5V" H 4015 2948 50  0000 C CNN
-F 2 "" H 4000 2775 50  0001 C CNN
-F 3 "" H 4000 2775 50  0001 C CNN
-	1    4000 2775
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4000 2775 4000 2975
-Wire Wire Line
-	4000 2975 4425 2975
-Wire Wire Line
-	4425 2975 4525 2975
-Connection ~ 4425 2975
-Wire Wire Line
-	4525 2975 4625 2975
-Connection ~ 4525 2975
-Wire Wire Line
-	4000 2975 3300 2975
 Wire Wire Line
 	3300 2975 3300 3075
-Connection ~ 4000 2975
-$Comp
-L power:+5V #PWR0104
-U 1 1 6621A18B
-P 3775 4075
-F 0 "#PWR0104" H 3775 3925 50  0001 C CNN
-F 1 "+5V" H 3790 4248 50  0000 C CNN
-F 2 "" H 3775 4075 50  0001 C CNN
-F 3 "" H 3775 4075 50  0001 C CNN
-	1    3775 4075
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3775 4075 3925 4075
-$Comp
-L power:GND #PWR0105
-U 1 1 66231BDC
-P 4625 6975
-F 0 "#PWR0105" H 4625 6725 50  0001 C CNN
-F 1 "GND" H 4630 6802 50  0000 C CNN
-F 2 "" H 4625 6975 50  0001 C CNN
-F 3 "" H 4625 6975 50  0001 C CNN
-	1    4625 6975
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4625 6975 4525 6975
-Connection ~ 4525 6975
-Wire Wire Line
-	4525 6975 4425 6975
 $Comp
 L Device:R_Small RC6
 U 1 1 662412EB
@@ -702,7 +580,6 @@ Wire Wire Line
 	1550 1800 1550 2475
 Wire Wire Line
 	1550 2475 1700 2475
-NoConn ~ 3925 3875
 $Comp
 L Switch:SW_Push SW1
 U 1 1 5C4DB62B
@@ -730,4 +607,127 @@ F 3 "" H 2575 3275 50  0001 C CNN
 	1    2575 3275
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4000 2975 3300 2975
+NoConn ~ 3925 3875
+$Comp
+L power:GND #PWR0105
+U 1 1 66231BDC
+P 4625 6975
+F 0 "#PWR0105" H 4625 6725 50  0001 C CNN
+F 1 "GND" H 4630 6802 50  0000 C CNN
+F 2 "" H 4625 6975 50  0001 C CNN
+F 3 "" H 4625 6975 50  0001 C CNN
+	1    4625 6975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3775 4075 3925 4075
+$Comp
+L power:+5V #PWR0104
+U 1 1 6621A18B
+P 3775 4075
+F 0 "#PWR0104" H 3775 3925 50  0001 C CNN
+F 1 "+5V" H 3790 4248 50  0000 C CNN
+F 2 "" H 3775 4075 50  0001 C CNN
+F 3 "" H 3775 4075 50  0001 C CNN
+	1    3775 4075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 2775 4000 2975
+$Comp
+L power:+5V #PWR0103
+U 1 1 6620CA5D
+P 4000 2775
+F 0 "#PWR0103" H 4000 2625 50  0001 C CNN
+F 1 "+5V" H 4015 2948 50  0000 C CNN
+F 2 "" H 4000 2775 50  0001 C CNN
+F 3 "" H 4000 2775 50  0001 C CNN
+	1    4000 2775
+	1    0    0    -1  
+$EndComp
+Text GLabel 5125 4275 2    50   Input ~ 0
+SCK
+Text GLabel 5125 4375 2    50   Input ~ 0
+MOSI
+Text GLabel 5125 4475 2    50   Input ~ 0
+MISO
+Text GLabel 5125 5275 2    60   Input ~ 0
+ROW0
+Text GLabel 5125 5375 2    60   Input ~ 0
+ROW1
+Text GLabel 5125 5475 2    60   Input ~ 0
+ROW2
+Text GLabel 5125 5575 2    60   Input ~ 0
+ROW3
+Text GLabel 5125 5675 2    60   Input ~ 0
+ROW4
+Text GLabel 5125 5775 2    60   Input ~ 0
+ROW5
+Text GLabel 3925 6275 0    60   Input ~ 0
+COL3
+Text GLabel 3925 6175 0    60   Input ~ 0
+COL2
+Text GLabel 3925 6075 0    60   Input ~ 0
+COL1
+Text GLabel 3925 5975 0    60   Input ~ 0
+COL0
+Text GLabel 5125 6575 2    60   Input ~ 0
+COL16
+Text GLabel 5125 6675 2    60   Input ~ 0
+COL15
+Text GLabel 5125 3875 2    60   Input ~ 0
+COL14
+Text GLabel 5125 3775 2    60   Input ~ 0
+COL13
+Text GLabel 5125 3675 2    60   Input ~ 0
+COL12
+Text GLabel 5125 3575 2    60   Input ~ 0
+COL11
+Text GLabel 5125 3475 2    60   Input ~ 0
+COL10
+Text GLabel 5125 3375 2    60   Input ~ 0
+COL9
+Text GLabel 5125 3275 2    60   Input ~ 0
+COL8
+Text GLabel 3925 6675 0    60   Input ~ 0
+COL7
+Text GLabel 3925 6575 0    60   Input ~ 0
+COL6
+Text GLabel 3925 6475 0    60   Input ~ 0
+COL5
+Text GLabel 3925 6375 0    60   Input ~ 0
+COL4
+Wire Wire Line
+	4000 2975 4425 2975
+Connection ~ 4425 2975
+Wire Wire Line
+	4525 6975 4425 6975
+Wire Wire Line
+	4625 6975 4525 6975
+Connection ~ 4525 6975
+Wire Wire Line
+	4525 2975 4625 2975
+Wire Wire Line
+	4425 2975 4525 2975
+Connection ~ 4525 2975
+$Comp
+L MCU_Microchip_AVR:AT90USB1286-MU U1
+U 1 1 5B32E6E2
+P 4525 4975
+F 0 "U1" H 4450 7125 50  0000 L BNN
+F 1 "AT90USB1286-AU" H 4200 2675 50  0000 L BNN
+F 2 "Housings_DFN_QFN:QFN-64-1EP_9x9mm_Pitch0.5mm" H 4525 4975 50  0001 L BNN
+F 3 "8.69 USD" H 4525 4975 50  0001 L BNN
+F 4 "TQFP-64 Microchip" H 4525 4975 50  0001 L BNN "Field4"
+F 5 "Microchip" H 4525 4975 50  0001 L BNN "Field5"
+F 6 "Embedded microcontroller AT90USB1286-AU TQFP 64 _14x14_ Microchip Technology 8-Bit 16 MHz I/O number 48" H 4525 4975 50  0001 L BNN "Field6"
+F 7 "Good" H 4525 4975 50  0001 L BNN "Field7"
+F 8 "AT90USB1286-AU" H 4525 4975 50  0001 L BNN "Field8"
+	1    4525 4975
+	1    0    0    -1  
+$EndComp
+Connection ~ 4000 2975
+Connection ~ 3725 3275
 $EndSCHEMATC
